@@ -1,4 +1,4 @@
-# AI Benchmark调研
+# 面向云边端协同的AI Benchmark调研
 
 人工智能技术已经在我们生活中的方方面面为我们提供服务，尤其是在图像、视频、语音、推荐系统等方面带来了突破性成果。AI Benchmark旨在衡量AI模型的性能和效能。本文就AI Benchmark的困难与挑战、发展现状，以及新兴的边缘计算领域的EDGE AI Benchmark发展现状进行了分析总结。
 
@@ -35,7 +35,7 @@ Bench Council发布的AIoT Bench是一个基准套件，AIoTBench专注于评估
 
 ![img](https://www.benchcouncil.org/aibench/aiotbench/images/AIoTBench_model.jpg)
 
-<center>AIotBench中使用模型的FLOPs、Parameters和准确率</center>
+<center>⬆️AIotBench中使用模型的FLOPs、Parameters和准确率</center>
 
 在框架的选择上，AIoTBench支持了三个流行和具有代表性的框架：Tensorflow Lite、Caffe2、Pytorch Mobile。
 
@@ -43,14 +43,14 @@ Bench Council发布的AIoT Bench是一个基准套件，AIoTBench专注于评估
 
 ![img](https://www.benchcouncil.org/aibench/aiotbench/images/AIoTBench_score.jpg)
 
-<center>AIotBench中VIPS计算</center>
+<center>⬆️AIotBench中VIPS计算</center>
 
 目前，Bench Council已经发布了Android版本的AIoTBench，它包含四个模块：
 
 1. 配置模块：用户可以配置模型文件的路径和数据集的路径。预处理参数由文件配置。我们在默认路径中提供了数据集、准备的模型和相应的预处理配置。添加新型号很方便。用户只需要i）准备模型文件并放入模型路径，ii）在配置文件中添加该模型的预处理设置。
-2. **预处理模块：**读取和预处理图像。
-3. **预测模块：**由于不同的框架有不同的推理API，AIoT Bench抽象了两个接口，并为三个框架实现它们：Tensorflow Lite、Caffe2、Pytorch Mobile。prepare()接口负责加载和初始化模型，infer()接口负责执行模型推理。当用户需要添加新的框架时，只需要根据新框架实现对应的两个API接口即可。
-4. **评分模块：**记录每次测试的准确性和推断时间，并计算最终的AI基准测试分数。
+2. 预处理模块：读取和预处理图像。
+3. 预测模块：由于不同的框架有不同的推理API，AIoT Bench抽象了两个接口，并为三个框架实现它们：Tensorflow Lite、Caffe2、Pytorch Mobile。prepare()接口负责加载和初始化模型，infer()接口负责执行模型推理。当用户需要添加新的框架时，只需要根据新框架实现对应的两个API接口即可。
+4. 评分模块：记录每次测试的准确性和推断时间，并计算最终的AI基准测试分数。
 
 ## AI Bench
 
@@ -60,7 +60,7 @@ AI Bench是Bench Council在2018年提出的适用于数据中心、HPC、边缘�
 
 ![1652697973339.png](image/EDGE_AI_Benchmark_survey/1652697973339.png)
 
-<center>AI Bench系统架构</center>
+<center>⬆️AI Bench系统架构</center>
 
 AI Bench框架分为数据输入、AI问题域、离线训练、在线推理四个部分。
 
